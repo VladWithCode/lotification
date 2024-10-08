@@ -54,7 +54,7 @@ export default defineConfig({
 		css: true
 	},
     devServer: {
-        port: 8081,
+        port: 8080,
         watchFiles: ['src/index.css', 'src/**/*.js']
     },
 });
