@@ -10,33 +10,33 @@
 	</head>
 	<body class="bg-light font-main">
         <div class="w-full h-0" id="top-most"></div>
-        <header class="sticky flex top-0 left-0 h-20 w-full bg-main border-b border-main z-50 transition-[height] duration-300" id="header-wrapper">
+        <header class="sticky flex top-0 left-0 h-20 w-full bg-main border-b border-main z-50 transition-[height] duration-300 shadow-sm shadow-stone-600" id="header-wrapper">
             <a href="/" class="flex items-center basis-1/5 flex-grow flex-shrink h-full overflow-hidden ml-10 mx-auto xl:col-span-1 xl:ml-auto">
                 <img src="/img/sibra_logo_white_256.webp" alt="Logo de Sibra Durango" class="w-full max-h-[80%] object-scale-down object-center transition-[height] duration-300">
             </a>
             <div class="col-start-3 row-start-1 m-auto mr-4 shrink grow-0 xl:hidden">
                 <button
                     data-navbar-toggler
-                    class="relative grid grid-cols-3 grid-rows-3 gap-0.5 w-7 h-7 group z-0">
+                    class="relative grid grid-cols-3 grid-rows-3 gap-0.5 w-7 h-7 text-light group z-0">
                     <div 
                         data-navbar-toggler-close
-                        class="absolute flex w-9 h-9 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-main text-secondary z-10 scale-0"> 
+                        class="absolute flex w-9 h-9 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent z-10 scale-0"> 
                         <svg class="w-8 h-8 m-auto fill-current">
                             <use href="/svg/times.svg#times"></use>
                         </svg>
                     </div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary transition group-hover:scale-125 group-active:scale-125"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary transition group-hover:scale-125 group-active:scale-125"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary transition group-hover:scale-150 group-active:scale-150"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary transition group-hover:scale-125 group-active:scale-125"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary transition group-hover:scale-125 group-active:scale-125"></div>
-                    <div class="flex aspect-square w-1 m-auto rounded-full bg-secondary"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current transition group-hover:scale-125 group-active:scale-125"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current transition group-hover:scale-125 group-active:scale-125"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current transition group-hover:scale-150 group-active:scale-150"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current transition group-hover:scale-125 group-active:scale-125"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current transition group-hover:scale-125 group-active:scale-125"></div>
+                    <div class="flex aspect-square w-1 m-auto rounded-full bg-current"></div>
                 </button>
             </div>
-            <nav class="hidden my-auto px-4 basis-3/5 grow shrink text-sm text-stone-50 xl:flex gap-4 justify-end pr-12">
+            <nav class="hidden my-auto px-4 basis-3/5 grow shrink text-stone-50 xl:flex gap-4 justify-end pr-12">
                 <a 
                     href="#inicio" 
                     class="navbar-link flex basis-[fit-content] grow-0 justify-center items-center border-b border-stone-700 p-1 active"
@@ -66,76 +66,78 @@
                     <div class="relative text-stone-50 z-10" data-navbar-link-label>Oficinas</div>
                 </a>
             </nav>
-            <div class="hidden -col-start-3 row-start-1 ml-auto mr-4 my-auto col-span-2 space-x-4 text-xs xl:block">
+            <div class="hidden -col-start-3 row-start-1 ml-auto mr-4 my-auto col-span-2 space-x-4 text-sm xl:block">
                 <a 
                     href="#contacto"
-                    class="p-2 rounded bg-secondary text-main tracking-wide font-semibold xs:px-2"
+                    class="p-2 rounded bg-secondary text-light tracking-wide font-semibold shadow-sm shadow-stone-600"
                     data-navbar-link="contacto">
                     Contactanos
                 </a>
-                <a target="_blank" href="https://sibradgo.com.mx/proyectos" class="p-2 rounded bg-accent text-stone-50 tracking-wide font-semibold xs:px-2">
+                <a 
+                    target="_blank" href="https://sibradgo.com.mx/proyectos" 
+                    class="p-2 rounded bg-accent text-light tracking-wide font-semibold shadow-sm shadow-stone-500">
                     Más Proyectos
                 </a>
             </div>
-            <!-- Navbar -->
+            <!-- Mobile Navbar -->
             <div 
                 class="absolute right-0 top-full w-0 overflow-hidden z-20 xl:hidden"
                 data-navbar-wrapper>
                 <div class="py-2 px-4 bg-main border border-transparent border-t-stone-700 shadow-sm shadow-stone-800">
                     <nav 
                         id="navbar"
-                        class="flex flex-col text-stone-50 font-bold tracking-wide space-y-3 text-nowrap"
+                        class="flex flex-col text-light font-bold tracking-wide space-y-3 text-nowrap"
                         data-navbar="close">
                         <a 
                             href="#inicio" 
-                            class="navbar-link flex justify-end border-b border-stone-700 p-1 pb-2 active"
+                            class="navbar-link flex justify-center border-b border-stone-700 p-1 pb-2 active"
                             data-navbar-link="inicio">
-                            <div class="absolute top-0 right-0 w-0 h-full bg-secondary -z-10 shadow shadow-stone-800" data-navbar-link-bg></div>
+                            <div class="absolute top-full bottom-2 right-0 w-0 h-1 bg-current -z-10" data-navbar-link-bg></div>
                             <div class="relative z-10" data-navbar-link-label>Inicio</div>
                         </a>
                         <a 
                             href="#acerca"
-                            class="navbar-link flex justify-end border-b border-stone-700 p-1 pb-2"
+                            class="navbar-link flex justify-center border-b border-stone-700 p-1 pb-2"
                             data-navbar-link="acerca">
-                            <div class="absolute top-0 right-0 w-0 h-full bg-secondary -z-10 shadow shadow-stone-800" data-navbar-link-bg></div>
+                            <div class="absolute top-full bottom-2 right-0 w-0 h-1 bg-current -z-10" data-navbar-link-bg></div>
                             <div class="relative z-10" data-navbar-link-label>Acerca De</div>
                         </a>
                         <a 
                             href="#galeria"
-                            class="navbar-link flex justify-end border-b border-stone-700 p-1 pb-2"
+                            class="navbar-link flex justify-center border-b border-stone-700 p-1 pb-2"
                             data-navbar-link="galeria">
-                            <div class="absolute top-0 right-0 w-0 h-full bg-secondary -z-10 shadow shadow-stone-800" data-navbar-link-bg></div>
+                            <div class="absolute top-full bottom-2 right-0 w-0 h-1 bg-current -z-10" data-navbar-link-bg></div>
                             <div class="relative z-10" data-navbar-link-label>Galería</div>
                         </a>
                         <a 
                             href="#oficinas"
-                            class="navbar-link flex justify-end border-b border-stone-700 p-1 pb-2"
+                            class="navbar-link flex justify-center border-b border-stone-700 p-1 pb-2"
                             data-navbar-link="oficinas">
-                            <div class="absolute top-0 right-0 w-0 h-full bg-secondary -z-10 shadow shadow-stone-800" data-navbar-link-bg></div>
+                            <div class="absolute top-full bottom-2 right-0 w-0 h-1 bg-current -z-10" data-navbar-link-bg></div>
                             <div class="relative z-10" data-navbar-link-label>Oficinas</div>
                         </a>
                         <a 
                             href="#contacto"
-                            class="text-center text-stone-50 bg-orange-500 rounded p-2"
+                            class="text-center text-stone-50 bg-accent rounded p-2 shadow-sm shadow-stone-600"
                             data-navbar-link="contacto">
                             Contactanos
                         </a>
                         <a 
                             href="https://sibradgo.com.mx/proyectos"
-                            class="text-center text-stone-50 bg-accent rounded p-2">
+                            class="text-center text-stone-50 bg-secondary rounded p-2 shadow-sm shadow-stone-600">
                             Mas Proyectos
                         </a>
                     </nav>
                 </div>
             </div>
         </header>
-        <main class="max-w-full overflow-x-hidden">
-            <div class="relative" id="inicio" data-section="inicio">
+        <main class="w-full overflow-x-hidden">
+            <div class="relative h-[70vh] px-4" id="inicio" data-section="inicio">
                 <img 
                     id="hero-bg-img"
                     src="/img/land-1.jpg"
                     alt=""
-                    class="w-full h-[70vh] object-cover object-center inset-0 brightness-90 shadow shadow-stone-700">
+                    class="w-full h-full object-cover object-center inset-0 brightness-90 shadow-md shadow-stone-600 rounded-b-md">
                 <div class="absolute text-center top-1/2 left-0 w-full -translate-y-1/2 px-2">
                     <h1 class="w-fit text-2xl font-bold text-stone-50 mx-auto md:text-4xl" style="text-shadow: 0px 5px 8px #44403c" id="hero-title">
                         Innovación y Bienestar <br>
@@ -145,14 +147,14 @@
                     <a
                         id="hero-cta"
                         href="#"
-                        class="block w-fit text-stone-50 font-medium border border-orange-400 bg-orange-400 py-2 px-8 rounded mx-auto shadow shadow-stone-700 transition hover:scale-105 md:text-lg opacity-0 -translate-y-[60%]">
+                        class="block w-fit text-stone-50 font-medium bg-secondary py-2 px-8 rounded mx-auto shadow shadow-stone-700 transition hover:scale-105 md:text-lg opacity-0 -translate-y-[60%]">
                         Agenda tu cita
                     </a>
                 </div>
             </div>
             <div class="py-6"></div>
             <div
-                class="max-w-screen-md xl:max-w-screen-lg mx-auto"
+                class="max-w-screen-md xl:max-w-screen-lg mx-auto xl:py-20"
                 data-animated-entrance="welcome">
                 <h2 class="text-xl text-stone-800 text-center font-secondary">
                     Bienvenida/o a<br>
@@ -169,28 +171,26 @@
             <div class="py-4"></div>
             <div 
                 id="acerca"
-                class="about relative md:max-w-screen-md xl:max-w-screen-lg text-center mx-auto px-4 py-16 invisible z-0 overflow-visible"
+                class="about text-center mx-auto invisible"
                 data-animated-entrance="about"
                 data-section="acerca">
-                <h2 class="text-2xl text-stone-50 font-bold font-secondary md:text-2xl relative z-10">Acerca de Nosotros</h2>
-                <div class="py-2"></div>
-                <p class="text-stone-50 xl:max-w-[50%] relative z-10 mx-auto">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
-                    Voluptatem molestiae ratione vero?
-                    Ea sapiente dolor explicabo voluptates deserunt,
-                    quas exercitationem.
-                </p>
-                <div class="absolute top-0 left-1/2 w-screen h-full -translate-x-1/2 z-0" data-animated-entrance="about-img">
-                    <div class="absolute inset-0 bg-stone-800 bg-opacity-40 z-10"></div>
-                    <img src="/img/land-5.jpg" alt="Fotografía del desarrollo y terrenos en Circuito Emperador" class="w-full h-full object-cover object-center">
+                <div class="relative bg-stone-900 bg-opacity-50 text-light h-full xl:w-1/2 xl:bg-light xl:bg-opacity-80 xl:text-stone-800 ml-auto py-20">
+                    <h2 class="text-2xl font-bold font-secondary md:text-2xl">Acerca de Nosotros</h2>
+                    <div class="py-2"></div>
+                    <p class="max-w-[35ch] mx-auto">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Voluptatem molestiae ratione vero?
+                        Ea sapiente dolor explicabo voluptates deserunt,
+                        quas exercitationem.
+                    </p>
                 </div>
             </div>
-            <div class="relative text-center md:max-w-screen-md xl:max-w-screen-lg mx-auto px-4 py-16">
-                <div class="w-fit ml-auto text-stone-50" data-animated-entrance="why-us">
+            <div class="us relative text-center mx-auto">
+                <div class="bg-light text-stone-50 xl:w-1/2 xl:bg-opacity-80 xl:text-stone-800 mr-auto py-20" data-animated-entrance="why-us">
                     <h2 class="text-xl text-stone-800 font-bold font-secondary md:text-2xl relative -z-10">¿Por qué comprar en Circuito Emperador?</h2>
                     <div class="py-1"></div>
-                    <p class="text-stone-600 relative z-0">
+                    <p class="max-w-[35ch] text-stone-600 relative z-0 mx-auto">
                     Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
                     Voluptatem molestiae ratione vero?
@@ -199,13 +199,14 @@
                     </p>
                 </div>
             </div>
-            <div class="bg-stone-50 invisible pt-6" data-animated-entrance="amenities">
+            <div class="invisible pt-6 xl:pt-16" data-animated-entrance="amenities">
                 <h2 class="text-2xl text-stone-800 text-center font-secondary md:text-2xl">Con Amenidades asombrosas</h2>
                 <div class="py-0.5"></div>
                 <p class="text-sm text-stone-800 text-center mx-auto px-4 md:text-base">
                 Perfectas para ti y tu familia
                 </p>
-                <div class="relative w-dvw max-w-full overflow-hidden z-0 select-none" data-amenity-slider-wrapper>
+                <div class="py-4 xl:py-6"></div>
+                <div class="relative w-dvw max-w-full overflow-hidden z-0 select-none md:max-w-screen-sm lg:max-w-screen-lg 2xl:max-w-screen-xl md:rounded-md mx-auto hover:cursor-grab" data-amenity-slider-wrapper>
                     <div class="absolute top-1/2 left-2 -translate-y-1/2 z-20">
                         <button 
                             id="amenity-slider-prev"
@@ -228,9 +229,8 @@
                             </svg>
                         </button>
                     </div>
-
                     <div
-                        class="relative flex overflow-visible pt-6 amenity-slider md:pt-8" 
+                        class="relative flex overflow-visible amenity-slider" 
                         data-amenity-slider
                         data-slider-slider
                         data-slider-animation-duration="400" >
@@ -278,10 +278,11 @@
 
                 </div>
             </div>
+            <div class="py-6 xl:py-8"></div>
             <div 
                 id="galeria"
                 data-section="galeria"
-                class="gallery pt-3 xl:pt-5 xl:pb-12">
+                class="gallery ">
                 <h2 class="text-3xl text-stone-800 text-center font-semibold font-secondary" data-animated-entrance="gallery">Galería</h2>
                 <div class="py-0.5"></div>
                 <p class="text-stone-800 text-center" data-animated-entrance="gallery">Mira las fotos que tenemos en Circuito Emperador</p>
@@ -302,7 +303,7 @@
                         </div>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 flex h-8 w-full bg-transparent xl:h-9">
-                        <button class="flex basis-[34%] grow-0 shrink-0 border-r-2 border-main bg-secondary text-main" data-slider-prev>
+                        <button class="flex basis-[34%] grow-0 shrink-0 bg-accent text-light" data-slider-prev>
                             <svg class="m-auto w-8 h-8 fill-current rotate-180">
                                 <use href="/svg/sprites.svg#angle"></use>
                             </svg>
@@ -311,7 +312,7 @@
                             <select class="w-full h-full text-lg text-center text-main" name="gallery-slide-select" id="gallery-slide-select">
                             </select>
                         </div>
-                        <button class="flex basis-[34%] grow-0 shrink-0 border-l-2 border-main bg-secondary text-main" data-slider-next>
+                        <button class="flex basis-[34%] grow-0 shrink-0 bg-accent text-light" data-slider-next>
                             <svg class="m-auto w-8 h-8 fill-current">
                                 <use href="/svg/sprites.svg#angle"></use>
                             </svg>
@@ -319,44 +320,21 @@
                     </div>
                 </div>
             </div>
-            <div class="py-4"></div>
-            <div id="contacto" class="contact px-4 py-3 md:py-6" data-section="contacto">
+            <div class="py-4 xl:py-8"></div>
+            <div id="contacto" class="contact px-4 py-3 md:py-6 xl:py-12" data-section="contacto">
                 <h2 class="text-3xl text-stone-100 text-center font-bold font-secondary" data-animated-entrance="contact">¡Contactanos!</h2>
                 <div class="py-2"></div>
-                <p class="text-stone-100 text-center w-fit xl:max-w-screen-lg mx-auto" data-animated-entrance="contact">
-                Recibe más información directo en tu celular
-                y permite que nuestros asesores te ayuden a
-                conocer Circuito Emperador
+                <p class="text-stone-100 text-center max-w-[40ch] mx-auto" data-animated-entrance="contact">
+                Envianos un mensaje, whatsapp, correo electronico o llamanos,
+                la opcion que prefieras estaremos encantados de brindarte la
+                atención que necesites.
                 </p>
-                <div class="py-2"></div>
+                <div class="py-2 md:py-4"></div>
                 <div class="relative w-full max-w-screen-sm xl:max-w-screen-lg xl:flex xl:justify-center mx-auto">
-                    <form
-                        class="relative bg-light rounded-lg px-4 py-2 space-y-2 z-10 shadow shadow-stone-400 md:py-4 md:space-y-3 invisible"
-                        id="contact-form"
-                        data-animated-entrance="contact-form">
-                        <div class="absolute inset-0 w-full h-full flex items-center justify-center rounded-lg bg-stone-800 bg-opacity-70">
-                            <p class="text-xl font-bold text-stone-100">Estamos trabajando en ello...</p>
-                        </div>
-                        <div class="space-y-1">
-                            <label for="name" class="text-sm text-stone-600 block md:text-base">Nombre</label>
-                            <input type="text" name="name" id="name" class="block w-full border-2 border-main px-2 py-1 rounded-md focus:outline-secondary md:text-lg">
-                        </div>
-                        <div class="space-y-1">
-                            <label for="phone" class="text-sm text-stone-600 block md:text-base">Telefono</label>
-                            <input type="tel" name="phone" id="phone" class="block w-full border-2 border-main px-2 py-1 rounded-md focus:outline-secondary md:text-lg">
-                        </div>
-                        <div class="flex gap-3 py-2">
-                            <input type="checkbox" name="consent" id="consent" class="w-6 border-2 border-main px-2 py-1 rounded-md focus:outline-secondary">
-                            <label for="name" class="text-xs text-stone-600">Acepto que se me contacte a tráves de Whatsapp o llamada teléfonica.</label>
-                        </div>
-                        <button class="w-full bg-accent text-stone-50 font-medium py-2 rounded-md active:outline active:outline-secondary">
-                            Enviar
-                        </button>
-                    </form>
                     <div 
                         data-animated-entrance="contact-card"
-                        class="relative bottom-2 left-0 right-0 bg-stone-50 pt-4 pb-2 rounded-b-md z-0 px-4 md:pt-6 xl:bottom-0 xl:top-0 xl:-left-2 xl:pl-6 xl:rounded-e-md invisible">
-                        <h3 class="text-lg font-bold font-secondary text-stone-800 md:text-xl">Envianos un mensaje</h3>
+                        class="relative w-3/4 bg-light rounded-md z-0 px-4 py-2 invisible mx-auto">
+                        <h3 class="text-lg font-bold font-secondary text-stone-800 md:text-xl">Contacto Sibra</h3>
                         <div class="py-1 md:py-1.5"></div>
                         <div class="space-y-0.5">
                             <p class="text-xs font-bold md:text-sm">Sibra Durango (matriz)</p>
