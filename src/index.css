@@ -19,7 +19,6 @@
     }
 
     &-link.active {
-        @apply text-main;
         :nth-child(1) {
             width: 100%;
             border-radius: 4px;
@@ -49,7 +48,22 @@
 }
 
 .about {
-    text-shadow: 0px 3px 8px rgb(0 0 0/.5)
+    text-shadow: 0px 3px 8px rgb(0 0 0/.5);
+    background-image: url('../public/img/land-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @screen xl {
+        text-shadow: none;
+    }
+}
+
+.us {
+    background-image: url('../public/img/land-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .social-link {
